@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Animal</h1>
+    <p class="animal">Animal : cat , tiger , dog , fish</p>
+    <div class="animal_name">
+        <p>Cat</p>
+        <p>Dog</p>
+        <p>tiger</p>
+    </div>
+    <button id="btn_hide_h1">Hide h1</button>
+    <button id="animal">Hide Animal</button>
+    <button id="animal_name">Hide Animal names</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button#btn_hide_h1").click(function(){
+            $("h1").hide();
+        });
+        $("button#animal").click(function(){
+            $("p.animal").hide();
+        });
+        $("button#animal_name").click(function(){
+            $(".animal_name p").hide();
+        })
+    });
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/jquery-3.7.1.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <p>This is my website</p>
+        <div class="blog">This is my website</div>
+        <div id="test"></div>
+    </body>
+    <script>
+
+    // create simple function
+    $(document).ready(function(){
+        $(this).hide() // hides the current element
+        $("p").hide() // hides all <p> elements.
+        $(".blog").hide() // hides all elements with class="blog".
+        $("#test").hide() // hides the element with id="test".
+    });
+
+    // create short function
+    $(function(){
+
+    })
+</script>
+</html>
